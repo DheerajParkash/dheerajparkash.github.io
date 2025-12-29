@@ -112,7 +112,7 @@
 }
 
 
-/*ADD-ON by Clovis Lechien*/
+/*ADD-ON by Dheeraj Parkash*/
 .cv-embed p {
   color: var(--white-1);
   text-align: center;
@@ -138,8 +138,6 @@ p {
   text-align: justify;        /* Justify text left and right */
   text-justify: inter-word;   /* Improve spacing between words */
   hyphens: auto;              /* Allow hyphenation for long words */
-  line-height: 1.6;           /* Optional: improve readability */
-  margin-bottom: 1em;         /* Optional: spacing between paragraphs */
 }
 
 /*-----------------------------------*\
