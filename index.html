@@ -1,9 +1,875 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta http-equiv="refresh" content="0; URL=https://dheerajparkash91.wixsite.com/dheerajparkash">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dheeraj Parkash - Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <p>If you are not redirected automatically, <a href="https://dheerajparkash91.wixsite.com/dheerajparkash">click here</a>.</p>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/moi.jpg" alt="Dheeraj Parkash" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Dheeraj Parkash">Dheeraj Parkash</h1>
+
+          <p class="title">ML Engineer - Applied Scientist</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:dheerajparkash36@gmail.com" class="contact-link">dheerajparkash36@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+33 (0) 758880659" class="contact-link">+33 (0) 758880659</a>
+            </div>
+
+          </li>
+
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2002-01-26">January 26, 2002</time>
+            </div>
+
+          </li> -->
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Paris, Île-de-France, France</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/dheerajparkash/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/DheerajParkash" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/DheerajKhetpal" class="social-link" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>CV</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a Machine Learning Engineer with a Master’s degree in Data Science and AI, based in Paris, with hands-on experience in multimodal learning, NLP, and transformer-based models. 
+            I have worked in both research and industry environments (INRIA, ALTEN), where I built and improved high-performance ML systems for real-world problems, including emotion recognition, hate speech detection, and conversational modeling.
+          </p>
+
+          <p>
+            I focus on end-to-end ML development data pipelines, model design, optimization, and rigorous evaluation with a strong emphasis on reliability, efficiency, and explainability. 
+            I bring a research driven yet engineering focused mindset, enabling me to translate state-of-the-art methods into scalable, production-ready AI solutions.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Multimodal AI Modeling</h4>
+
+                <p class="service-item-text">
+                  Designing and implementing advanced transformer-based architectures that process and fuse text, audio and visual streams (cross-modal attention, late/early fusion) for robust multimodal emotion recognition tasks.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Engineering & Pipelines</h4>
+
+                <p class="service-item-text">
+                  Building scalable and reliable data pipelines, from preprocessing and cleaning to annotation validation protocols, creating reliable datasets that enable robust training of complex ML models.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Efficient Model Optimization</h4>
+
+                <p class="service-item-text">
+                  Applying resource aware techniques structured pruning, quantization, PEFT/LoRA-style fine-tuning, and training time regularization to make large models practical for constrained environments.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Applied Research & Interpretability</h4>
+
+                <p class="service-item-text">
+                  Conducting research on state-of-the-art ML and NLP techniques, developing interpretable and fair AI systems, and translating novel methods into production-ready solutions for real-world applications.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item
+                  data-testimonials-source="assets/recommendations/zineb_noumir_recommendation.pdf"
+                  data-testimonials-source-type="pdf">
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/female_placeholder.jpg" alt="Zineb N." width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Zineb N.</h4>
+                <!-- ADD THIS -->
+                <time datetime="2025-10-13" data-testimonials-date>
+                
+                </time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I supervised Dheeraj Parkash during his internship in multimodal artificial intelligence at ALTEN's Innovation Department, where he demonstrated strong scientific rigor, autonomy, and enthusiasm for applied research.
+                    He worked on fusing heterogeneous data sources for behavioral analysis in immersive environments, quickly mastering complex concepts and translating them into effective experimental implementations. 
+                    I confidently recommend him for research or engineering roles in AI, as well as for doctoral programs.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item 
+                  data-testimonials-source="https://www.linkedin.com/in/dheerajparkash/"
+                  data-testimonials-source-type="linkedin">
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/male_placeholder.jpg" alt="Amdjed BELAREF" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Amdjed BELAREF</h4>
+                <time datetime="2025-10-20" data-testimonials-date>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I had the pleasure of working with Dheeraj during his internship at Alten. 
+                    He demonstrated strong autonomy, consistently taking initiative with a problem-solving mindset.
+                    I'm confident he will be a valuable asset to any team he joins.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item 
+                  data-testimonials-source="https://www.linkedin.com/in/dheerajparkash/"
+                  data-testimonials-source-type="linkedin">
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/female_placeholder.jpg" alt="Barbara Buljat Raymond" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Barbara Buljat Raymond</h4>
+                <time datetime="2024-05-17" data-testimonials-date>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I had the pleasure of mentoring Dheeraj during his time as a student at Université Côte d'Azur.
+                    He consistently demonstrated exceptional dedication and a proactive attitude. 
+                    His ability to actively engage in discussions, coupled with his outstanding work ethic, truly set him apart. 
+                    Dheeraj is not only a quick learner but also an ambitious individual who strives for excellence.
+                    I recommend Dheeraj for any future endeavors.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item 
+                  data-testimonials-source="https://www.linkedin.com/in/dheerajparkash/"
+                  data-testimonials-source-type="linkedin">
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/male_placeholder.jpg" alt="Amdjed BELAREF" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Nicolás Benjamín Ocampo</h4>
+                <time datetime="2024-02-16" data-testimonials-date>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I met Dheeraj while mentoring a Hate Speech Detection project for his Master's at Université Côte d'Azur. From the start, Dheeraj showed a positive attitude toward work and handled complex Natural Language Processing tasks with good independence. Dheeraj always showed readiness and motivation for meetings, working sessions, and evaluations, facilitating our collaboration. 
+                    I believe Dheeraj would be a valuable addition to any team or project, bringing both skill and a great work ethic
+                  </p>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time data-modal-date>28 July, 2025</time>
+              
+              <a href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="modal-source-link"
+                data-modal-source>
+              </a>
+              
+              <div data-modal-text>
+                <p>
+                  Woohoo !!
+                </p>
+              </div>
+
+              
+            </div>
+
+          </section>
+
+        </div>
+
+        
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Industry & Research Experience</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://www.inria.fr/en/inria-centre-universite-cote-azur" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/inria.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.alten.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/alten.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.i3s.unice.fr/en/" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/i3s.jpg" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.inria.fr/en/wimmics" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/cnrs.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Paris Scalay University & ENS Paris Saclay</h4>
+
+              <span>2024 — 2025</span>
+
+              <p class="timeline-text">
+                <!-- Engineering degree in Computer Science, Majoring in Artificial Intelligence and Minoring in Computer Vision. Coursework included Advanced ML/DL, NLP, Differentiable Programming, and MLOps. -->
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universite Cote d'Azur</h4>
+
+              <span>2023 - 2024</span>
+
+              <p class="timeline-text">
+                <!-- Exchange semester at the International School of Engineering, majoring in Computer Science. -->
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sukkur IBA University</h4>
+
+              <span>2018 - 2022</span>
+
+              <p class="timeline-text">
+                <!-- Exchange semester at the International School of Engineering, majoring in Computer Science. -->
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Scientist Intern - ALTEN</h4>
+
+              <span>April-September2025</span>
+
+              <p class="timeline-text">
+                <!-- Led research on Multimodal Emotion Recognition. Created a proprietary 140h+ multimodal dataset and developed a custom MLLM, taking the project from a strategic impasse to a successful proof-of-concept. -->
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Machine Learning Research Intern - INRIA</h4>
+
+              <span>June-August 2024</span>
+
+              <p class="timeline-text">
+                <!-- Conducted research on a novel image recognition framework for Phishing Detection (ViPhiD). Created original datasets with over 9000 samples each. -->
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Scientist Intern - INRIA</h4>
+
+              <span>March-May 2024</span>
+
+              <p class="timeline-text">
+                <!-- Developed and deployed models for duplicate data detection, identifying and removing 150,000 duplicates from production systems. -->
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">GenAI Research Intern - I3S/CNRS</h4>
+
+              <span>October-December 2023</span>
+
+              <p class="timeline-text">
+                <!-- Developed and deployed models for duplicate data detection, identifying and removing 150,000 duplicates from production systems. -->
+              </p>
+              
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Deep Learning (PyTorch, Tensorflow)</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Multimodal AI (NLP, CV, Audio)</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Engineering & MLOps</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python & Core ML Libraries</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Paris Saclay</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-select-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Paris Saclay</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="Paris Saclay">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/prog_diff.png" alt="prog-diff" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Programmation Différentiable</h3>
+
+                <p class="project-category">Paris Saclay</p>
+
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Curriculum
+      -->
+
+      <article class="cv" data-page="cv">
+
+        <header>
+          <h2 class="h2 article-title">Curriculum Vitae</h2>
+        </header>
+
+        <section class="cv-embed">
+          <figure>
+            <iframe
+              src="assets/cv/Resume_DheerajParkash_ML.pdf"
+              width="100%"
+              height="800px"  style="border: none;" title="Dheeraj Parkash's CV">
+            </iframe>
+          </figure>
+          <p>
+            If the resume doesn't load or you prefer a direct download, you can
+            <a href="assets/cv/Resume_DheerajParkash_ML.pdf" download="Resume_DheerajParkash_ML.pdf">download it here</a>
+          </p>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70616.93346053122!2d2.3385620077428397!3d48.87122381420807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sfr!2sfr!4v1753798211557!5m2!1sfr!2sfr"
+              width="400" height="300" loading="lazy">
+            </iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
