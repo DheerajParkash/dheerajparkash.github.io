@@ -132,8 +132,15 @@
 .cv-embed p a:hover {
   background-color: hsl(45, 100%, 65%);
 }
-/*ADD-ON by Clovis Lechien*/
+/*ADD-ON by Dheeraj Parkash*/
 
+p {
+  text-align: justify;        /* Justify text left and right */
+  text-justify: inter-word;   /* Improve spacing between words */
+  hyphens: auto;              /* Allow hyphenation for long words */
+  line-height: 1.6;           /* Optional: improve readability */
+  margin-bottom: 1em;         /* Optional: spacing between paragraphs */
+}
 
 /*-----------------------------------*\
   #RESET
